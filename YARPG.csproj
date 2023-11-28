@@ -1,0 +1,190 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>YARPG.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\00rock.png" />
+    <None Remove="Resources\01cortl.png" />
+    <None Remove="Resources\02cortr.png" />
+    <None Remove="Resources\03corbl.png" />
+    <None Remove="Resources\04corbr.png" />
+    <None Remove="Resources\05hort.png" />
+    <None Remove="Resources\06horb.png" />
+    <None Remove="Resources\07verl.png" />
+    <None Remove="Resources\08verr.png" />
+    <None Remove="Resources\09doort.png" />
+    <None Remove="Resources\10doorb.png" />
+    <None Remove="Resources\11doorl.png" />
+    <None Remove="Resources\12doorr.png" />
+    <None Remove="Resources\13room.png" />
+    <None Remove="Resources\14path.png" />
+    <None Remove="Resources\15stairu.png" />
+    <None Remove="Resources\16staird.png" />
+    <None Remove="Resources\17player.png" />
+    <None Remove="Resources\18potion.png" />
+    <None Remove="Resources\19armor.png" />
+    <None Remove="Resources\20scroll.png" />
+    <None Remove="Resources\21weapon.png" />
+    <None Remove="Resources\22gold.png" />
+    <None Remove="Resources\23lantern.png" />
+    <None Remove="Resources\24kobold-orc.png" />
+    <None Remove="Resources\25shopkeep.png" />
+    <None Remove="Resources\9999creaturetarget.png" />
+    <None Remove="Resources\9999positiontarget.png" />
+    <None Remove="Resources\Attack-Hit1.wav" />
+    <None Remove="Resources\Attack-Hit2.wav" />
+    <None Remove="Resources\Attack-Hit3.wav" />
+    <None Remove="Resources\Attack-Miss.wav" />
+    <None Remove="Resources\Explode-Miss.wav" />
+    <None Remove="Resources\Explode.wav" />
+    <None Remove="Resources\GameStart.wav" />
+    <None Remove="Resources\Healing.wav" />
+    <None Remove="Resources\Healing2.wav" />
+    <None Remove="Resources\Magic1.wav" />
+    <None Remove="Resources\Magic2.wav" />
+    <None Remove="Resources\Magic3.wav" />
+    <None Remove="Resources\MagicMissiles.wav" />
+    <None Remove="Resources\Monster.wav" />
+    <None Remove="Resources\PlayerDied.wav" />
+    <None Remove="Resources\Ranged-Hit.wav" />
+    <None Remove="Resources\RangedMiss.wav" />
+    <None Remove="Resources\Shock1.wav" />
+    <None Remove="Resources\Shock2.wav" />
+    <None Remove="Resources\Splat.wav" />
+    <None Remove="Resources\YARPG.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="YARPG.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\00rock.png" />
+    <EmbeddedResource Include="Resources\01cortl.png" />
+    <EmbeddedResource Include="Resources\02cortr.png" />
+    <EmbeddedResource Include="Resources\03corbl.png" />
+    <EmbeddedResource Include="Resources\04corbr.png" />
+    <EmbeddedResource Include="Resources\05hort.png" />
+    <EmbeddedResource Include="Resources\06horb.png" />
+    <EmbeddedResource Include="Resources\07verl.png" />
+    <EmbeddedResource Include="Resources\08verr.png" />
+    <EmbeddedResource Include="Resources\09doort.png" />
+    <EmbeddedResource Include="Resources\10doorb.png" />
+    <EmbeddedResource Include="Resources\11doorl.png" />
+    <EmbeddedResource Include="Resources\12doorr.png" />
+    <EmbeddedResource Include="Resources\13room.png" />
+    <EmbeddedResource Include="Resources\14path.png" />
+    <EmbeddedResource Include="Resources\15stairu.png" />
+    <EmbeddedResource Include="Resources\16staird.png" />
+    <EmbeddedResource Include="Resources\17player.png" />
+    <EmbeddedResource Include="Resources\18potion.png" />
+    <EmbeddedResource Include="Resources\19armor.png" />
+    <EmbeddedResource Include="Resources\20scroll.png" />
+    <EmbeddedResource Include="Resources\21weapon.png" />
+    <EmbeddedResource Include="Resources\22gold.png" />
+    <EmbeddedResource Include="Resources\23lantern.png" />
+    <EmbeddedResource Include="Resources\24kobold-orc.png" />
+    <EmbeddedResource Include="Resources\25shopkeep.png" />
+    <EmbeddedResource Include="Resources\9999creaturetarget.png" />
+    <EmbeddedResource Include="Resources\9999positiontarget.png" />
+    <EmbeddedResource Include="Resources\Attack-Hit1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Attack-Hit2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Attack-Hit3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Attack-Miss.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Explode-Miss.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Explode.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GameStart.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Healing.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Healing2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Magic1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Magic2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Magic3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MagicMissiles.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Monster.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PlayerDied.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Ranged-Hit.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RangedMiss.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Shock1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Shock2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Splat.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\YARPG.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="todoplans.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

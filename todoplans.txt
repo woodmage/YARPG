@@ -1,0 +1,17 @@
+﻿0)  BUG: Monsters are inconsistent about attacking player.  Monsters need to be re-entered into creatures.txt.
+0)  BUG: Save / restore not working properly.  Darkvision is not kept over save and restore.
+0)  BUG: Sometimes the minimap does not get drawn properly.  Consider divorcing minimap from Display method.
+0)  BUG: Sometimes doors do not get drawn.  None of them, on the entire map.
+1)  Implement condition poisoned.
+2)  Consider the possibility of traps, perhaps limited to room interiors.  Perhaps a Trap class.
+2)  Consider the possibility of hidden doors and hidden passageways.  (Part 1: implementing Hidden seen type, done.)
+2)  Implement more spell effects and damages.  Consider opening Spell class to not bother with enum.
+2)  Consider a simplified (guided) player initialization.
+2)  Implement cones, lines, etc for AoE spell areas.
+3)  Temporary paths or doors could make things like passwall spells make sense.
+3)  Allow for digging, either with pick or perhaps a wand of digging, etc.
+3)  Consider a teleport spell (scroll, spell book, wand, etc) both random and guided.  Different types of teleport.
+3)  Adjust Attack class to allow for save DCs instead of tohit bonus or in addition to handle special effects.  Consider changing Effect Effect to SpellEffect Effect.
+3)  Allow for different types of doors.  Closed, locked, etc.  Consider ramifications for display as currently doors are treated as doorways.
+4)  Consider a tutorial.  And/or suggesting Explorer class.
+4)  Keep in mind the idea of the NetHack kitchen sink, constrained by 5e rules.
